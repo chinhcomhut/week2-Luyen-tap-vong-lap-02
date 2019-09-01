@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập vào số các phần tử n"));
+    let i;
+    let giaithua=1;
+   if(n<=0){
+       document.write("Nhập lại giá trị n yêu cầu tính giai thừa của một số nguyên dương")
+   }
+   else{
+    for(i=1;i<=n;i++){
+        giaithua=giaithua*i;
+    }
+       document.write("kết quả n! = "+ giaithua)}
+</script>
+</body>
+</html>

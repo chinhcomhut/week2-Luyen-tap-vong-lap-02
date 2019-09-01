@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<h2>Nhập vào số các phần tử trong một dãy FIBONACI sau đó in cả dãy ra màn hình</h2>
+<script>
+    let a1=0; a2=1;
+    let a;
+    let n=parseInt(prompt("Nhập vào n là số chữ số xuất hiện trong dãy FIBONACI:"));
+    let i;
+    if(n>=3){  document.write("0 , 1")
+    for(i=2;i<n;i++){
+        a=a1+a2;
+        a1=a2;
+        a2=a;
+        document.write(" , "+a)}}
+     if(n==1) {document.write("0 ")}
+     if(n==2){document.write("0 1")}
+     if(n<0){document.write("Đăng nhập lại : n phải lớn hơn 0")}
+</script>
+</body>
+</html>

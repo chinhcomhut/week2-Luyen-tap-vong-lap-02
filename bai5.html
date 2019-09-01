@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    /* Bài toán thực tế: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con)
+    khi biết số tiền ban đầu, số tháng cho vay và lãi suất hàng tháng.
+  Ta có thể dựa vào công thức tính lãi suất kép ngân hàng sau:
+                    Fn=P(1+i/m)^(n.m)
+                    -P: số tiền gửi ban đầu
+                    - i: lãi suất (VD: 10% = 0,01)
+                    - n: số năm
+                    -m: kì hạn ghép lãi */
+    let P = parseFloat(prompt("Nhập vào số tiền gửi:"));
+    let i= parseFloat(prompt("Nhập vào lãi suất theo năm VD: 10% =0.01"));
+    let n=parseFloat(prompt("Số năm gửi tiền"));
+    let m=parseFloat(prompt("Kì hạn ghép lãi trong 1 năm:"));
+    let a = (1+i/m);
+    let b=(n*m);
+    let Fn=P*(Math.pow(a,b));
+    document.write("Tổng tiền thu được sau gửi lãi là:"+Fn+"VNĐ")
+</script>
+</body>
+</html>
